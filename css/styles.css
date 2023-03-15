@@ -16,6 +16,8 @@
 --color-border-btn:#E7E9FC;
 --color-background-secondary:#F4F4FD;
 --color-border-card:#E7E9FC;
+--color-border-secondary:#8E8F99;
+--color-icons-customers:#8e8f99;
 
 }
 
@@ -179,10 +181,7 @@ background-size: cover;
 max-width: 1440px;
 margin-left: auto;
 margin-right: auto;
-
-
 }
-
 .hero-title {
 font-weight: 700;
 font-size: 56px;
@@ -214,7 +213,6 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 margin-top: 48px;
-
 }
 .hero-btn:hover,
 .hero-btn:focus{
@@ -238,7 +236,6 @@ color: var(--color-primary);
 .features-list {
 display: flex; 
 gap: 24px;
-
 }
 .features-list-item{
 width: calc((100%-72px)/4);
@@ -289,7 +286,6 @@ gap: 24px;
 .team-section {
 background-color:var(--color-background-secondary) ;
 padding-bottom: 120px;
-
 }
 .team-title {
 font-size: 36px;
@@ -298,7 +294,6 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--color-secondary);
 text-align: center;
-
 }
 .name-employee-team { 
 font-weight: 500;
@@ -315,31 +310,25 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-primary);
 text-align: center;
-
 }
 .employee-team {
 padding-bottom: 32px;
 background-color: var(--color-background-primary);
 border-radius: 0px 0px 4px 4px;
 }
-
 .team-list {   
 display: flex;
 gap: 24px;  
 }
-
 .social-list {
 display: flex;
 justify-content: center;
 gap: 24px;
 margin-top: 8px;
-
 }
 .social-list-item {
 width: 40px; 
 height: 40px;
-
- 
 }
 .social-item-link {
 width: 100%;
@@ -353,14 +342,46 @@ background-color:var(--color-logo-links);
 .social-item-link:hover,
 .social-item-link:focus{
 background-color: var(--color-pressed-state);
-
 }
 
-
-
-
-
 /* ============================ / TEAM SECTION /  ============ */
+/* ============================  Customers / ============ */
+.customers-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+margin-bottom: 72px;
+}
+.customers-list{
+display: flex;
+gap: 24px;
+}
+.customers-link {
+width: 168px;
+height: 88px;
+border: 1px solid var(--color-border-secondary);
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.customers-link:hover,
+.customers-link:focus {
+border: 1px solid var(--color-pressed-state);
+}
+.icon-customers {
+width: 104px;
+height: 56px;
+fill:var(--color-icons-customers);
+}
+.icon-customers:hover,
+.icon-customers:focus {
+ fill:var(--color-pressed-state) ;  
+}
+
+/* ============================ / Customers /  ============ */
+
 
 
 /* ============================ FOOTER  ============ */
@@ -377,14 +398,48 @@ color: var(--color-border-btn);
 }
 .logo-letter {
 color: var(--color-bgr-btn);
-
+}
+.footer-copyright{
+width: 264px; 
 }
 .copyright {
-width: 264px;
+width: 100%;
 margin-top: 16px;    
 }
-
-
+.social-footer-list {
+display: flex; 
+gap: 16px;
+margin-left: 120px;   
+}
+.social-footer-ithem {
+width: 40px;
+height: 40px;
+}
+.footer-container {
+display: flex;
+}
+.social-footer-link {
+width: 100%;
+height: 100%;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(255, 255, 255, 0.1);
+}
+.social-footer-link:hover,
+.social-footer-link:focus {
+background-color: rgba(49, 208, 170, 1);;
+}
+.social-footer-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-text);
+margin-left: 120px;
+margin-bottom:16px;
+}
 /* ============================ /FOOTER/  ============ */
 
 /* ======================= PROJECT PORTFOLIO =================*/
@@ -405,8 +460,8 @@ padding: 12px 24px;
 background-color: var(--color-pressed-state);
 color: var(--color-text);
 border-color: transparent;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .portfolio-project-title {
 font-weight: 500;
 font-size: 20px;
@@ -418,7 +473,6 @@ font-size: 16px;
 line-height: 1.2;
 color: var(--color-primary);
 }
-
 .project-filter-btn {
 margin-bottom: 72px;
 display: flex;
@@ -430,19 +484,15 @@ display: flex;
 flex-wrap: wrap;
 margin-top: -48px;
 margin-left: -24px;
-
 }
 .portfolio-project-list>.Item {
 flex-basis: calc (100%/3-24px);
 margin-top: 48px;
 margin-left: 24px;  
 }
-
 .filter-section {
 padding-top: 96px;
 }
-
-
 .card-content {
 padding-top: 32px;
 padding-bottom: 32px;
