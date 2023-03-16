@@ -157,6 +157,7 @@ margin-left: auto;
 padding-top: 24px;
 padding-bottom: 24px;
 border-bottom: 1px solid var(--color-border-btn);
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .title {
 font-weight: 700;
@@ -365,21 +366,18 @@ border-radius: 4px;
 display: flex;
 justify-content: center;
 align-items: center;
-}
-.customers-link:hover,
-.customers-link:focus {
-border: 1px solid var(--color-pressed-state);
+color:var(--color-icons-customers);
 }
 .icon-customers {
 width: 104px;
 height: 56px;
-fill:var(--color-icons-customers);
+fill: currentColor;
 }
-.icon-customers:hover,
-.icon-customers:focus {
- fill:var(--color-pressed-state) ;  
+.customers-link:hover,
+.customers-link:focus {
+border-color: var(--color-pressed-state);
+color: var(--color-pressed-state);
 }
-
 /* ============================ / Customers /  ============ */
 
 
@@ -409,7 +407,6 @@ margin-top: 16px;
 .social-footer-list {
 display: flex; 
 gap: 16px;
-margin-left: 120px;   
 }
 .social-footer-ithem {
 width: 40px;
@@ -437,8 +434,9 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-text);
-margin-left: 120px;
-margin-bottom:16px;
+margin-bottom:16px;}
+.social-footer {
+margin-left: 120px; 
 }
 /* ============================ /FOOTER/  ============ */
 
@@ -486,7 +484,7 @@ margin-top: -48px;
 margin-left: -24px;
 }
 .portfolio-project-list>.Item {
-flex-basis: calc (100%/3-24px);
+/* flex-basis: calc (100%/3-24px); */
 margin-top: 48px;
 margin-left: 24px;  
 }
@@ -500,6 +498,13 @@ padding-left: 16px;
 padding-right: 16px;
 border-bottom: 1px solid var(--color-border-card);
 border-left: 1px solid var(--color-border-card);
-border-right: 1px solid var(--color-border-card);    
+border-right: 1px solid var(--color-border-card);  
 }
+.portfolio-project-img:hover,
+.portfolio-project-img:focus {
+display: block;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
 /* =====================/PROGECT PORTFOLIO/ =================*/
