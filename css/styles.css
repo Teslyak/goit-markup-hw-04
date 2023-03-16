@@ -480,13 +480,10 @@ gap: 24px;
 .portfolio-project-list {
 display: flex;
 flex-wrap: wrap;
-margin-top: -48px;
-margin-left: -24px;
-}
-.portfolio-project-list>.Item {
-/* flex-basis: calc (100%/3-24px); */
-margin-top: 48px;
-margin-left: 24px;  
+/* margin-top: -48px;
+margin-left: -24px; */
+column-gap: 24px;
+row-gap: 48px;
 }
 .filter-section {
 padding-top: 96px;
