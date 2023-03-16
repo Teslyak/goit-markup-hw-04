@@ -480,8 +480,6 @@ gap: 24px;
 .portfolio-project-list {
 display: flex;
 flex-wrap: wrap;
-/* margin-top: -48px;
-margin-left: -24px; */
 column-gap: 24px;
 row-gap: 48px;
 }
